@@ -14,17 +14,18 @@
 /* LOGO */
 .logo {
   color: white;
-  position: relative;
-  left: 5vh;
-  bottom: 99vh;
+  position: absolute;
+  left: 0;
+  top: 0;
   font-family: 'Playfair Display', serif;
-  font-size: 3vw;
-  padding: 1vh;
-  line-height: 4vh;
+  font-size: 28px;
+  line-height: -45px;
+  padding: 13px;
 }
 
 .logomatch {
-  color:#F9C0C3;
+  color: #F9C0C3;
+  margin-top: -19px;
 }
 
 /* CREATE A COCKTAIL */
@@ -185,7 +186,7 @@ a.scrolldown:hover {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 15vh;
-  border-right:14px solid beige;
+  // border-right:14px solid beige;
 }
 
 .sidenav a {
