@@ -110,8 +110,13 @@ a.scrolldown:hover {
 .video {
   @include for-phone-only {
     display: none;
-    background: url('../../assets/images/cocktailimagebackground.png') cover no-repeat;
+    background: url('../images/cocktailimagebackground.png') cover no-repeat;
   }
+
+
+
+
+
   object-fit: cover !important;
   min-width: 100vw;
   max-width: 100vw;
