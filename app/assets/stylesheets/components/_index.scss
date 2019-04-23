@@ -7,10 +7,7 @@
 .secondpage {
   width: 100%;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
   overflow-x: hidden;
-  margin-top: -14.5vh;
 }
 
 /* LOGO */
@@ -18,9 +15,9 @@
   color: white;
   position: relative;
   left: 5vh;
-  bottom: 106vh;
+  bottom: 99vh;
   font-family: 'Playfair Display', serif;
-  font-size: 39px;
+  font-size: 3vw;
   padding: 1vh;
   line-height: 4vh;
 }
@@ -74,11 +71,10 @@ a.scrolldown:hover {
 
 /* CARD CONTAINER */
 .cardcontainer {
-  margin-top: -8vh;
-  margin-left: 0vh;
   background-color: white;
-  height: 120vh;
+  height: 100vh;
   padding-top: 8vh;
+  display: flex;
 }
 
 .cardcontainer h1 {
@@ -129,21 +125,22 @@ a.scrolldown:hover {
 
 .videocontainer {
   background:#F9C0C3;
-  height: 109.5vh;
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
 /* TITLE */
 .title {
   font-family: 'Playfair Display', serif;
   color: white;
-  font-size: 68px;
+  font-size: 5vw;
   text-align: center;
   font-weight: bold;
-  line-height: 78px;
+  line-height:5vw;
 }
 
 .title strong {
-  text-shadow: 5px 5px #F9C0C3;
+  text-shadow: 0.4vw 0.4vw #F9C0C3;
  }
 
 .titlelink {
@@ -153,6 +150,7 @@ a.scrolldown:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size:3.5vw;
 }
 
 .titlelink h1 {
@@ -161,6 +159,7 @@ a.scrolldown:hover {
   text-align: center;
   margin-top: 1vh;
   margin-bottom: -1vh;
+  font-size: 3.5vw;
 }
 
 .description {
@@ -170,8 +169,8 @@ a.scrolldown:hover {
   width: 62vw;
   left: 62vh;
   bottom: -16vh;
-  letter-spacing: 2.5px;
-  font-size: 15px;
+  letter-spacing: 0.2vw;
+  font-size: 1.1vw;
 }
 
 /* CREATE A COCKTAIL SIDEBAR */
