@@ -70,24 +70,6 @@ a.scrolldown:hover {
   justify-content: center;
 }
 
-/* CARD CONTAINER */
-.cardcontainer {
-  background-color: white;
-  height: 100vh;
-  padding-top: 8vh;
-  display: flex;
-}
-
-.cardcontainer h1 {
-  margin-left: 5vh;
-  margin-bottom: -8vh;
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  font-size: 12vh;
-  color:#523E40;
-  font-weight: lighter;
-}
-
 @include for-phone-only {
   .moodoutline {
     visibility:hidden;
@@ -111,6 +93,10 @@ a.scrolldown:hover {
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1.2px;
     -webkit-text-stroke-color: #F9C0C3;
+  }
+
+  .mooddesign {
+    visibility:hidden;
   }
 }
 
@@ -168,12 +154,10 @@ a.scrolldown:hover {
 .description {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
-  position: relative;
-  width: 62vw;
-  left: 62vh;
-  bottom: -16vh;
   letter-spacing: 0.2vw;
-  font-size: 1.1vw;
+  font-size: 24px;
+  background-color: white;
+  padding: 26px;
 }
 
 /* CREATE A COCKTAIL SIDEBAR */
@@ -244,12 +228,14 @@ a.scrolldown:hover {
 
 .explorescroll{
   letter-spacing: 1px;
-  font-size: 13px;
+  font-size: 17px;
   font-family: 'Open Sans', sans-serif;
-  position: relative;
-  left: 185vh;
-  bottom: -33vh;
-  color:#523E40;
+  color: #523E40;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 31px;
 }
 
 /* FOOTER */

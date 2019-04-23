@@ -1,14 +1,49 @@
+// .card {
+//   height: 51vh;
+//   background-size: cover !important;
+//   background-position: center;
+//   color: white;
+//   position: relative;
+//   margin-bottom: 7vh;
+//   border-radius: 0.5vh;
+//   width: 21vw;
+//   display: inline-block;
+//   margin-left: 2vh;
+// }
+
+.cardcontainer {
+    background-color: white;
+}
+
+
+// .cardcontainer {
+//   background-color: white;
+//   height: 100vh;
+//   padding-top: 8vh;
+//   display: flex;
+// }
+
+.cardcontainer h1 {
+  margin-left: 5vh;
+  margin-bottom: -8vh;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 12vh;
+  color:#523E40;
+  font-weight: lighter;
+}
+
+
+
+
 .card {
-  height: 51vh;
+  height: 50vh;
   background-size: cover !important;
   background-position: center;
   color: white;
   position: relative;
-  margin-bottom: 7vh;
   border-radius: 0.5vh;
-  width: 21vw;
-  display: inline-block;
-  margin-left: 2vh;
+  margin-top: 25px;
 }
 
 .card h2 {
@@ -25,7 +60,6 @@
 .cards {
   overflow-x: scroll;
   white-space: nowrap;
-  width: 98vw;
   z-index: 22;
 }
 
