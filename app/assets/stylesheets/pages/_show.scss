@@ -29,7 +29,7 @@
 // }
 
 .show-image {
-  height:58;
+  height:64vh;
   width:100vw;
   border-right: 14px solid beige;
 }
@@ -58,11 +58,17 @@
   display: flex;
 }
 
+// .showpageinfo {
+//   display: flex;
+//   flex-direction: column;
+//   margin-left: 6vh;
+//   padding: -1vh;
+// }
+
 .showpageinfo {
   display: flex;
   flex-direction: column;
-  margin-left: 6vh;
-  padding: -1vh;
+  padding: 15px;
 }
 
 /* INGREDIENTS */
@@ -151,8 +157,17 @@
   color: #523E40;
 }
 
+// .list-group {
+//   width: 25vw!important;
+//   margin-left:1vh;
+//   height: 28vh;
+//   overflow-y: scroll;
+//   display: block;
+//   font-family: 'Open Sans', sans-serif;
+//   font-weight:lighter;
+// }
+
 .list-group {
-  width: 25vw!important;
   margin-left:1vh;
   height: 28vh;
   overflow-y: scroll;
@@ -175,19 +190,33 @@
   margin-top: 21vh;
 }
 
+// .modalbtn {
+//   border-radius: 50%;
+//   padding: 0px;
+//   background-color: #F9C0C3;
+//   color: white;
+//   border: 1px solid #F9C0C3;
+//   width: 1.5vw;
+//   font-size: 13px;
+//   font-weight: lighter;
+//   margin-top: -13px;
+//   height: 3vh;
+//   margin-right: 0.5vh;
+// }
+
+
+
 .modalbtn {
   border-radius: 50%;
-  padding: 0px;
   background-color: #F9C0C3;
   color: white;
   border: 1px solid #F9C0C3;
-  width: 1.5vw;
+  width: 23px;
   font-size: 13px;
   font-weight: lighter;
   margin-top: -13px;
-  height: 3vh;
-  margin-right: 0.5vh;
 }
+
 
 .modalbtn:hover {
   text-decoration:none;
