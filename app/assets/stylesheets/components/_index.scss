@@ -39,13 +39,13 @@
 
 .createbutton {
   text-align: center;
-  margin-top: 8vh;
+  margin-top: 19%;
   font-family: 'Open Sans', sans-serif;
   color: white;
   text-decoration: none;
-  font-size: 2vh;
+  font-size: 18px;
   border: 1px solid;
-  width: 19vw;
+  width: 200px;
 }
 
 .createbutton p {
@@ -120,22 +120,23 @@ a.scrolldown:hover {
   object-fit: cover !important;
   min-width: 100vw;
   max-width: 100vw;
-  opacity: 0.6;
+  opacity: 0.75;
   min-height: 100vh;
   max-height: 100vh;
-}
-
-.videocontainer {
-  background:#F9C0C3;
-  min-height: 100vh;
-  max-height: 100vh;
+  background: #F9C0C3;
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -2000000;
 }
 
 /* TITLE */
 .title {
   font-family: 'Playfair Display', serif;
   color: white;
-  font-size: 5vw;
+  font-size: 36px;
   text-align: center;
   font-weight: bold;
   line-height:5vw;
@@ -146,13 +147,12 @@ a.scrolldown:hover {
  }
 
 .titlelink {
-  position: absolute;
-  top: 44vh;
-  right: 22vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size:3.5vw;
+  z-index: 20;
+  height: 100vh;
+  justify-content: center;
 }
 
 .titlelink h1 {
@@ -161,7 +161,7 @@ a.scrolldown:hover {
   text-align: center;
   margin-top: 1vh;
   margin-bottom: -1vh;
-  font-size: 3.5vw;
+  font-size: 32px;
 }
 
 .description {

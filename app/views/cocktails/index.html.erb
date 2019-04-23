@@ -8,27 +8,31 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Playfair+Display" rel="stylesheet">
 </head>
 <body>
+
+
+  <!----------------in the mood for ----------------->
+      <div class="titlelink">
+        <h1>what are you</h1>
+        <div class="title">in the <strong>mood</strong></div>
+        <h1>for today?</h1>
+  <!-------------create button------------------>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <div class="createbutton" >
+          <p> + create your own mood cocktail </p>
+        </div>
+          </span>
+      </div>
+
+
 <!----------------LANDING PAGE VIDEO------------------>
   <div class="videocontainer">
      <%= video_tag "cocktail1.mov", controls: false, autoplay: true, muted:
     true, loop: true, class: "video"  %>
-<!----------------in the mood for ----------------->
-    <div class="titlelink">
-      <h1>what are you</h1>
-      <div class="title">in the <strong>mood</strong></div>
-      <h1>for today?</h1>
-<!-------------create button------------------>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">
-      <div class="createbutton" >
-        <p> + create your own mood cocktail </p>
-      </div>
-        </span>
+    <!----------------logo ----------------->
+    <div class="logo">
+      <div>mood</div>
+      <div class="logomatch">match</div>
     </div>
-  </div>
-  <!----------------logo ----------------->
-  <div class="logo">
-    <div>mood</div>
-    <div class="logomatch">match</div>
   </div>
 <!---------------side bar ----------------->
   <div id="mySidenav" class="sidenav">
