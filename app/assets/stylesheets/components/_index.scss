@@ -1,9 +1,10 @@
 // Import your components CSS files here.
 @import "alert";
-@import "navbar";
 @import "banner";
 @import "card";
 @import "mixins";
+
+
 
 .secondpage {
   width: 100%;
@@ -39,7 +40,7 @@
 
 .createbutton {
   text-align: center;
-  margin-top: 19%;
+  margin-top: 15%;
   font-family: 'Open Sans', sans-serif;
   color: white;
   text-decoration: none;
@@ -67,8 +68,6 @@ a.scrolldown:hover {
 .scrolldowndiv {
   display: flex;
   justify-content: center;
-  position: relative;
-  bottom: 24vh;
 }
 
 /* CARD CONTAINER */
@@ -89,26 +88,30 @@ a.scrolldown:hover {
   font-weight: lighter;
 }
 
-.moodoutline {
-  margin-left: 5vh;
-  margin-bottom: 7vh;
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  font-size: 12vh;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: lightgrey;
-}
+@include for-phone-only {
+  .moodoutline {
+    visibility:hidden;
+    margin-left: 5vh;
+    margin-bottom: 7vh;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 12vh;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: lightgrey;
+  }
 
-.moodpinkoutline {
-  margin-left: 5vh;
-  margin-bottom: 7vh;
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  font-size: 12vh;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1.2px;
-  -webkit-text-stroke-color: #F9C0C3;
+  .moodpinkoutline {
+    visibility:hidden;
+    margin-left: 5vh;
+    margin-bottom: 7vh;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 12vh;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: #F9C0C3;
+  }
 }
 
 .row {
@@ -124,8 +127,8 @@ a.scrolldown:hover {
   min-height: 100vh;
   max-height: 100vh;
   background: #F9C0C3;
-  width: auto;
-  height: auto;
+  // width: auto;
+  // height: auto;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -139,7 +142,6 @@ a.scrolldown:hover {
   font-size: 36px;
   text-align: center;
   font-weight: bold;
-  line-height:5vw;
 }
 
 .title strong {
@@ -159,9 +161,8 @@ a.scrolldown:hover {
   font-family: 'Playfair Display', serif;
   color: white;
   text-align: center;
-  margin-top: 1vh;
-  margin-bottom: -1vh;
   font-size: 32px;
+  width:67%;
 }
 
 .description {

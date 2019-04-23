@@ -10,19 +10,22 @@
 <body>
 
 
-  <!----------------in the mood for ----------------->
-      <div class="titlelink">
-        <h1>what are you</h1>
-        <div class="title">in the <strong>mood</strong></div>
-        <h1>for today?</h1>
-  <!-------------create button------------------>
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">
-        <div class="createbutton" >
-          <p> + create your own mood cocktail </p>
-        </div>
-          </span>
-      </div>
+<!----------------in the mood for ----------------->
+  <div class="titlelink">
+    <h1>what are you in the <strong>mood</strong> for today?</h1>
+   <!--  <div class="title">in the <strong>mood</strong></div> -->
 
+<!-------------create button------------------>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+    <div class="createbutton" >
+      <p> + create your own mood cocktail </p>
+    </div>
+      </span>
+ <!----------------scroll down anchor------------------>
+  <div class="scrolldowndiv">
+     <a href="#scrolldown" class="scrolldown">↓ scroll down</a>
+  </div>
+</div>
 
 <!----------------LANDING PAGE VIDEO------------------>
   <div class="videocontainer">
@@ -60,10 +63,7 @@
           document.getElementById("mySidenav").style.width = "0";
         }
         </script>
-  <!----------------scroll down anchor------------------>
-  <div class="scrolldowndiv">
-     <a href="#scrolldown" class="scrolldown">↓ scroll down</a>
-  </div>
+
   <!---------------second page------------------>
 <div class="secondpage">
    <div id="scrolldown">
@@ -75,7 +75,9 @@
         <div class="cardcontainer">
           <div data-aos="fade-right" data-aos-duration="1500">
             <div class="mooddesign">
-                <h1>moods</h1>
+                <!---------change frist mood back to normal black------------------>
+
+                <h1 class="moodoutline">moods</h1>
                 <h1 class="moodoutline">moods</h1>
                 <h1 class="moodpinkoutline">moods</h1>
                 <h1 class="moodoutline">moods</h1>
