@@ -38,7 +38,7 @@
     </div>
   </div>
 <!---------------side bar ----------------->
-  <div id="mySidenav" class="sidenav">
+<!--   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="createsidebartitle">
       Create your own mood cocktail
@@ -63,7 +63,7 @@
           document.getElementById("mySidenav").style.width = "0";
         }
         </script>
-
+ -->
   <!---------------second page------------------>
 <!-- <div class="secondpage">
  --><!--    <div id="scrolldown">
@@ -73,13 +73,10 @@
   <!--   </div> -->
   <!----------------CARDS CONTAINER------------------->
         <div class="explorescroll">explore  ↓ </div>
-        <div class="cardcontainer">
 <!--           <div data-aos="fade-right" data-aos-duration="1500">
             <div class="mooddesign">
-                <!---------change frist mood back to normal black------------------>
-                <h1 class="moodoutline">moods</h1>
-                <h1 class="moodoutline">moods</h1>
-                <h1 class="moodpinkoutline">moods</h1>
+                -------change frist mood back to normal black------------------>
+            <!--     <h1 class="moodoutline">moods</h1>
                 <h1 class="moodoutline">moods</h1>
                 <h1 class="moodpinkoutline">moods</h1>
                 <h1 class="moodoutline">moods</h1>
@@ -87,20 +84,29 @@
                 <h1 class="moodoutline">moods</h1>
                 <h1 class="moodpinkoutline">moods</h1>
                 <h1 class="moodoutline">moods</h1>
+                <h1 class="moodpinkoutline">moods</h1>
+                <h1 class="moodoutline">moods</h1> -->
       <!--     </div> -->
         <!----------------CARDS------------------->
-         <div class="cards">
-          <% @cocktails.each do |cocktail| %>
-            <div class="card"
-              style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-                     url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill unless cocktail.photo.blank? %>')">
-                <h2><%= cocktail.name.downcase %></h2>
-                 <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
-               </div>
-              <% end %>
-            </div>
-          </div>
+  <div class="cardcontainer">
+    <div class="row">
+      <% @cocktails.each do |cocktail| %>
+        <div class="col-xs-12 col-sm-4">
+           <div class="cocktail-list">
+             <%= link_to cocktail_path(cocktail) do %>
+              <div class="card"
+                style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+                     url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop:  :fill unless cocktail.photo.blank? %>')">
+                  <h2><%= cocktail.name.downcase %></h2>
+                    <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
+                </div>
+             <% end %>
         </div>
+      </div>
+    <% end %>
+    </div>
+  </div>
+
   <!------ footer ------>
       <footer class="footer">
         <a target="_blank" href="https://github.com/sophielihenry/rails-mister-cocktail-1" class="githublink">Hand-coded with love  </a>
