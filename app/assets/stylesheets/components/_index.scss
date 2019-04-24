@@ -125,10 +125,10 @@ a.scrolldown:hover {
     bottom: 0;
     right: 0;
     z-index: -2000000;
+    background: linear-gradient(beige, pink, white);
 }
 
 .videocontainer {
-
     background-color: #F9C0C3;
     min-height: 100vh;
     max-height: 100vh;
@@ -162,7 +162,7 @@ a.scrolldown:hover {
   justify-content: center;
 
   @include for-phone-only {
-    background: radial-gradient(circle, pink, beige);
+    background: linear-gradient(beige, pink, white);
     display: flex;
     flex-direction: column;
     align-items: center;
