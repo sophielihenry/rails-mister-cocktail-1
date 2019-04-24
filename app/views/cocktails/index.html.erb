@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <title>MoodMatch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Playfair+Display" rel="stylesheet">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
 
 <body>
@@ -49,7 +49,7 @@
     <span>in the mood</span><br/>
     for today?<br /></h1>
 <!-------------create button trigger modal------------------>
-      <button onclick="sweetalertclick()" class="createModalButton" data-toggle="modal" data-target="#createModal"><p> + create your own mood cocktail </p></button>
+      <button class="createModalButton" data-toggle="modal" data-target="#createModal"><p> + create your own mood cocktail </p></button>
         <div class="exploreArrow">explore  ↓ </div>
   </div>
     <div class="logo">
@@ -61,9 +61,6 @@
      <%= video_tag "cocktailvideobackground.mov", controls: false, autoplay: true, muted:
     true, loop: true, class: "video"  %>
   </div>
-
-
-
 <!---------------description ------------------>
   <div class="description">a collection of bespoke and personalised cocktails carefully curated to match your mood </div>
 <!-------------CARDS------------------->
@@ -87,18 +84,6 @@
       <footer class="footer">
         <a target="_blank" href="https://github.com/sophielihenry/rails-mister-cocktail-1" class="githublink">Hand-coded with love  </a>
       </footer>
-      <!------end of container tag------->
+<!------end of container tag------->
     </div>
-
-
-<script>
-
-  function sweetalertclick() {
-    swal("hi")
-  }
-
-</script>
-
-
-
-  </body>
+</body>
