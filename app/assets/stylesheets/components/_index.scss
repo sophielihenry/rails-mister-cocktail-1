@@ -110,7 +110,7 @@ a.scrolldown:hover {
 .video {
   @include for-phone-only {
     display: none;
-    background: url('../images/cocktailimagebackground.png') cover no-repeat;
+    background: url('../../images/cocktailimagebackground.png') cover no-repeat;
   }
 
 
