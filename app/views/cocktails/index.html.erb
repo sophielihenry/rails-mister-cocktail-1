@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<!----------------in the mood for ----------------->
+<!------------landing page greeting----------------->
   <div class="titlelink">
     <h1>what are you<br />
      <span>in the mood</span><br />
@@ -21,37 +21,6 @@
 <!-------------create button trigger modal------------------>
 <button class="createbutton" data-toggle="modal" data-target="#createModal"><p> + create your own mood cocktail </p></button>
 
-
-
-<!-- Modal -->
-<div class="modal fade createmodal" id="createModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="createmodal-dialog" role="document">
-    <div class="createmodal-content">
-      <div class="createmodal-header">
-        <h5 class="createmodal-title" id="exampleModalLabel">Create your own cocktail</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="createmodal-body">
-
-      <div class="newcocktailform">
-       <%= simple_form_for @cocktail do |f| %>
-            <%= f.input :name %>
-
-             <%= f.input :photo %>
-            <%= f.input :photo_cache, as: :hidden %>
-
-            <%= f.button :submit, class: 'btn btn-primary' %>
-        <% end %>
-        </div>
-
-      </div>
-      <div class="createmodal-footer">
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
@@ -78,6 +47,35 @@
 
 
 
+<!---------------- Modal ------------------>
+<div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="createmodal-dialog" role="document">
+    <div class="createmodal-content">
+      <div class="createmodal-header">
+        <h5 class="createmodal-title" id="exampleModalLabel">Create your own cocktail</h5>
+      </div>
+      <div class="createmodal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      <div class="newcocktailform">
+       <%= simple_form_for @cocktail do |f| %>
+            <%= f.input :name %>
+
+             <%= f.input :photo %>
+            <%= f.input :photo_cache, as: :hidden %>
+
+            <%= f.button :submit, class: 'btn btn-primary' %>
+        <% end %>
+        </div>
+
+      </div>
+      <div class="createmodal-footer">
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -126,9 +124,6 @@
   <!------ footer ------>
       <footer class="footer">
         <a target="_blank" href="https://github.com/sophielihenry/rails-mister-cocktail-1" class="githublink">Hand-coded with love  </a>
-        <p>©
-          <script> document.write(new Date().getFullYear());</script>
-        </p>
       </footer>
       <!------end of container tag------->
    <!--    </div> -->
