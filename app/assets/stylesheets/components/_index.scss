@@ -183,11 +183,23 @@ a.scrolldown:hover {
 .description {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
-  letter-spacing: 0.2vw;
-  font-size: 24px;
+  letter-spacing: 1px;
+  font-size: 18px;
   background-color: white;
   padding: 26px;
+
+  @include for-tablet-landscape-up {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+    font-size: 17px;
+    background-color: white;
+    padding: 54px;
+    text-align: center;
+  }
 }
+
+
 
 /* CREATE A COCKTAIL SIDEBAR */
 .sidenav {
@@ -257,13 +269,9 @@ a.scrolldown:hover {
 
 .explorescroll{
   letter-spacing: 1px;
-  font-size: 17px;
+  font-size: 12px;
   font-family: 'Open Sans', sans-serif;
-  color: #523E40;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  background-color: white;
+  color: white;
   padding: 31px;
 }
 

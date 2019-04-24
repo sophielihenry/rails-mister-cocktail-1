@@ -7,7 +7,7 @@
 
     @include for-tablet-landscape-up {
 
-   background-color: white;
+  background-color: white;
   width: 22vh;
   font-size: 2vh;
   padding: 1vh;
@@ -29,6 +29,14 @@
   text-decoration:none;
   color:#F9C0C3;
 }
+
+
+
+.container {
+  height:100vh;
+}
+
+
 
 /* COCKTAIL IMAGE */
 .show-image {
@@ -81,7 +89,12 @@
 .showpageinfo {
   display: flex;
   flex-direction: column;
-  padding: 15px;
+
+  @include for-tablet-landscape-up {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+  }
 }
 
 /* INGREDIENTS */

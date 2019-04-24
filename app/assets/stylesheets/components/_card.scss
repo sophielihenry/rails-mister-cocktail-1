@@ -36,7 +36,9 @@
 }
 
 
-
+.cardcontainer {
+  background-color:white;
+}
 
 .card {
   height: 60vh;
@@ -57,13 +59,6 @@
   top: 24vh;
   letter-spacing: 1px;
   text-shadow: 2px 3px #F9C0C3;
-}
-
-.cards {
-  overflow-x: scroll;
-  white-space: nowrap;
-  z-index: 22;
-  background-color:white;
 }
 
 .card-link {
