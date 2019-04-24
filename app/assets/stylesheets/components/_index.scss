@@ -44,12 +44,10 @@
   font-family: 'Open Sans', sans-serif;
   color: white;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 13px;
   border: 1px solid;
-  width: 200px;
-  border-radius: 58px;
-  font-weight:lighter;
-
+  width: 219px;
+  font-weight: lighter;
 }
 
 .createbutton p {
@@ -118,7 +116,7 @@ a.scrolldown:hover {
     object-fit: cover !important;
     min-width: 100vw;
     max-width: 100vw;
-    opacity: 0.5;
+    opacity: 0.4;
     min-height: 100vh;
     max-height: 100vh;
     position: absolute;
@@ -129,6 +127,19 @@ a.scrolldown:hover {
 }
 
 .videocontainer {
+
+    @include for-phone-only {
+ min-height: 100vh;
+    max-height: 100vh;
+    min-width: 100vw;
+    max-width: 100vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -2000000;
+
+}
+
     background-color: #F9C0C3;
     min-height: 100vh;
     max-height: 100vh;
@@ -149,8 +160,17 @@ a.scrolldown:hover {
   font-weight: bold;
 }
 
-.title strong {
-  text-shadow: 0.4vw 0.4vw #F9C0C3;
+.titlelink h1 span {
+  text-shadow: 0.2vw 0.3vw #F9C0C3;
+  font-size:47px;
+
+  @include for-phone-only {
+  text-shadow: 0.2vw 0.3vw beige;
+  font-size:47px;
+
+
+}
+
  }
 
 .titlelink {
