@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <title>MoodMatch</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Playfair+Display" rel="stylesheet">
 </head>
 <body>
-
 
 <!----------------in the mood for ----------------->
   <div class="titlelink">
@@ -16,12 +18,43 @@
      <span>in the mood</span><br />
    for today?<br /></h1>
 
-<!-------------create button------------------>
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">
-    <div class="createbutton" >
-      <p> + create your own mood cocktail </p>
+<!-------------create button trigger modal------------------>
+<button class="createbutton" data-toggle="modal" data-target="#myModal"><p> + create your own mood cocktail </p></button>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Create your own cocktail</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+      <div class="newcocktailform">
+       <%= simple_form_for @cocktail do |f| %>
+            <%= f.input :name %>
+
+             <%= f.input :photo %>
+            <%= f.input :photo_cache, as: :hidden %>
+
+            <%= f.button :submit, class: 'btn btn-primary' %>
+        <% end %>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+      </div>
     </div>
-      </span>
+  </div>
+</div>
+
+
+
 
 
         <div class="explorescroll">explore  ↓ </div>
@@ -38,33 +71,27 @@
     true, loop: true, class: "video"  %>
     <!----------------logo ----------------->
   </div>
+
+
+
 <!---------------side bar ----------------->
-<!--   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="createsidebartitle">
-      Create your own mood cocktail
-    </div>
-      <div class="newcocktailform">
-       <%= simple_form_for @cocktail do |f| %>
-            <%= f.input :name %>
 
-             <%= f.input :photo %>
-            <%= f.input :photo_cache, as: :hidden %>
 
-            <%= f.button :submit, class: 'btn btn-primary' %>
-        <% end %>
-        </div>
-      </div>
-        <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "35vw";
-        }
 
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-        }
-        </script>
- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!---------------second page------------------>
 <!-- <div class="secondpage">
  --><!--    <div id="scrolldown">
@@ -74,20 +101,9 @@
   <!--   </div> -->
   <!----------------CARDS CONTAINER------------------->
 <!--           <div data-aos="fade-right" data-aos-duration="1500">
-            <div class="mooddesign">
-                -------change frist mood back to normal black------------------>
-            <!--     <h1 class="moodoutline">moods</h1>
-                <h1 class="moodoutline">moods</h1>
-                <h1 class="moodpinkoutline">moods</h1>
-                <h1 class="moodoutline">moods</h1>
-                <h1 class="moodpinkoutline">moods</h1>
-                <h1 class="moodoutline">moods</h1>
-                <h1 class="moodpinkoutline">moods</h1>
-                <h1 class="moodoutline">moods</h1>
-                <h1 class="moodpinkoutline">moods</h1>
-                <h1 class="moodoutline">moods</h1> -->
-      <!--     </div> -->
-        <!----------------CARDS------------------->
+
+
+    -------------CARDS------------------->
   <div class="cardcontainer">
     <div class="row">
       <% @cocktails.each do |cocktail| %>

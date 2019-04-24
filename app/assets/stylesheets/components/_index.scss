@@ -46,8 +46,10 @@
   text-decoration: none;
   font-size: 13px;
   border: 1px solid;
-  width: 225px;
+  width: 235px;
   font-weight: lighter;
+  background: none;
+  outline:none;
 }
 
 .createbutton p {
@@ -69,36 +71,6 @@ a.scrolldown:hover {
 .scrolldowndiv {
   display: flex;
   justify-content: center;
-}
-
-@include for-phone-only {
-  .moodoutline {
-    display:none;
-    margin-left: 5vh;
-    margin-bottom: 7vh;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    font-size: 12vh;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: lightgrey;
-  }
-
-  .moodpinkoutline {
-    display:none;
-    margin-left: 5vh;
-    margin-bottom: 7vh;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    font-size: 12vh;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1.2px;
-    -webkit-text-stroke-color: #F9C0C3;
-  }
-
-  .mooddesign {
-    display:none;
-  }
 }
 
 .row {
@@ -129,7 +101,7 @@ a.scrolldown:hover {
 .videocontainer {
 
     @include for-phone-only {
- min-height: 100vh;
+    min-height: 100vh;
     max-height: 100vh;
     min-width: 100vw;
     max-width: 100vw;
@@ -190,6 +162,7 @@ a.scrolldown:hover {
     z-index: 20;
     height: 100vh;
     justify-content: center;
+    margin-left:0;
   }
 }
 
