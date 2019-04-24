@@ -1,9 +1,16 @@
 /* LINK BACK TO HOMEPAGE */
 .linkback {
-  background-color: white;
-  font-size: 2vh;
-  border-radius: 6px;
-  font-family: 'Open Sans', sans-serif;
+background-color: white;
+    width: 22vh;
+    font-size: 2vh;
+    padding: 1vh;
+    border-radius: 6px;
+    padding-left: 13px;
+    position: absolute;
+    left: -1vh;
+    bottom: 107vh;
+    font-family: 'Open Sans', sans-serif;
+
 
   @include for-tablet-landscape-up {
     background-color: white;
@@ -35,6 +42,9 @@
 }
 
 .layout {
+
+  position: relative;
+
    @include for-tablet-landscape-up {
     display:flex;
     background-color:white;
