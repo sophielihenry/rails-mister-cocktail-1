@@ -65,9 +65,8 @@
 .createModalButton:hover {
   color: white;
   text-decoration: none;
-  font-size:2vh;
+  font-size:13px;
   border: 1px solid;
-  padding: 2.5vh;
 }
 
 .createModalButton {
@@ -184,6 +183,7 @@
   font-size: 18px;
   background-color: white;
   padding: 26px;
+  text-align:center;
 
   @include for-tablet-landscape-up {
     font-family: 'Open Sans', sans-serif;
