@@ -1,52 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>MoodMatch</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Playfair+Display" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>MoodMatch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Playfair+Display" rel="stylesheet">
+  </head>
+
 <body>
-
 <!------------landing page greeting----------------->
-  <div class="titlelink">
+  <div class="landingPageInfo">
     <h1>what are you<br />
-     <span>in the mood</span><br />
-   for today?<br /></h1>
-
+    <span>in the mood</span><br/>
+    for today?<br /></h1>
 <!-------------create button trigger modal------------------>
-<button class="createbutton" data-toggle="modal" data-target="#createModal"><p> + create your own mood cocktail </p></button>
-
-
-
-
-
-
-        <div class="explorescroll">explore  ↓ </div>
-
-</div>
-
+      <button class="createModalButton" data-toggle="modal" data-target="#createModal"><p> + create your own mood cocktail </p></button>
+        <div class="exploreArrow">explore  ↓ </div>
+  </div>
     <div class="logo">
       <div>mood</div>
       <div class="logomatch">match</div>
     </div>
 <!----------------LANDING PAGE VIDEO------------------>
-  <div class="videocontainer">
+  <div class="videoContainer">
      <%= video_tag "cocktailvideobackground.mov", controls: false, autoplay: true, muted:
     true, loop: true, class: "video"  %>
-    <!----------------logo ----------------->
   </div>
-
-
-
-<!---------------side bar ----------------->
-
-
-
 <!---------------- Modal ------------------>
 <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="createmodal-dialog" role="document">
@@ -58,55 +41,26 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-
       <div class="newcocktailform">
        <%= simple_form_for @cocktail do |f| %>
             <%= f.input :name %>
-
-             <%= f.input :photo %>
+            <%= f.input :photo %>
             <%= f.input :photo_cache, as: :hidden %>
-
             <%= f.button :submit, class: 'btn btn-primary' %>
         <% end %>
         </div>
-
       </div>
       <div class="createmodal-footer">
       </div>
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!---------------second page------------------>
-<!-- <div class="secondpage">
- --><!--    <div id="scrolldown">
- --><!--     <div data-aos="fade-down" data-aos-duration="1500">
- -->
   <div class="description">a collection of bespoke and personalised cocktails carefully curated to match your mood </div>
-  <!--   </div> -->
-  <!----------------CARDS CONTAINER------------------->
-<!--           <div data-aos="fade-right" data-aos-duration="1500">
-
-
-    -------------CARDS------------------->
-  <div class="cardcontainer">
+<!-------------CARDS------------------->
+  <div class="cardContainer">
     <div class="row">
       <% @cocktails.each do |cocktail| %>
         <div class="col-xs-12 col-sm-4">
-           <div class="cocktail-list">
              <%= link_to cocktail_path(cocktail) do %>
               <div class="card"
                 style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
@@ -115,22 +69,14 @@
                     <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
                 </div>
              <% end %>
-        </div>
-      </div>
-    <% end %>
+          </div>
+        <% end %>
+     </div>
     </div>
-  </div>
-
-  <!------ footer ------>
+<!-------------- footer ------>
       <footer class="footer">
         <a target="_blank" href="https://github.com/sophielihenry/rails-mister-cocktail-1" class="githublink">Hand-coded with love  </a>
       </footer>
       <!------end of container tag------->
-   <!--    </div> -->
     </div>
-      <!-----CSS animation------->
-     <!--    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script> -->
-       <!--  AOS.init(); -->
-    <!--   </script> -->
-    </body>
+  </body>
