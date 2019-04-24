@@ -44,9 +44,12 @@
   font-family: 'Open Sans', sans-serif;
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
   border: 1px solid;
   width: 200px;
+  border-radius: 58px;
+  font-weight:lighter;
+
 }
 
 .createbutton p {
@@ -112,17 +115,29 @@ a.scrolldown:hover {
     display: none;
   }
 
-  object-fit: cover !important;
-  min-width: 100vw;
-  max-width: 100vw;
-  opacity: 0.75;
-  min-height: 100vh;
-  max-height: 100vh;
-  background: #F9C0C3;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -2000000;
+    object-fit: cover !important;
+    min-width: 100vw;
+    max-width: 100vw;
+    opacity: 0.5;
+    min-height: 100vh;
+    max-height: 100vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -2000000;
+}
+
+.videocontainer {
+
+    background-color: #F9C0C3;
+    min-height: 100vh;
+    max-height: 100vh;
+    min-width: 100vw;
+    max-width: 100vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -2000000;
 }
 
 /* TITLE */
@@ -161,7 +176,7 @@ a.scrolldown:hover {
   font-family: 'Playfair Display', serif;
   color: white;
   text-align: center;
-  font-size: 32px;
+  font-size: 42px;
   width:67%;
 }
 
