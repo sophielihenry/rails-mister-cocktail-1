@@ -110,12 +110,7 @@ a.scrolldown:hover {
 .video {
   @include for-phone-only {
     display: none;
-    background: url('../../images/cocktailimagebackground.png') cover no-repeat;
   }
-
-
-
-
 
   object-fit: cover !important;
   min-width: 100vw;
@@ -124,8 +119,6 @@ a.scrolldown:hover {
   min-height: 100vh;
   max-height: 100vh;
   background: #F9C0C3;
-  // width: auto;
-  // height: auto;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -152,6 +145,16 @@ a.scrolldown:hover {
   z-index: 20;
   height: 100vh;
   justify-content: center;
+
+  @include for-phone-only {
+    background: radial-gradient(circle, pink, beige);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 20;
+    height: 100vh;
+    justify-content: center;
+  }
 }
 
 .titlelink h1 {
