@@ -12,6 +12,16 @@ html,body
     overflow-x: hidden;
 }
 
+.row {
+    &:before {
+        content: none;
+    }
+
+    &:after {
+        content: '';
+    }
+}
+
 /* LOGO */
 .logo {
   color: white;
