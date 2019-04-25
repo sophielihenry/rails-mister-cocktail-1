@@ -1,9 +1,8 @@
 // Import your components CSS files here.
-@import "alert";
-@import "banner";
 @import "card";
 @import "mixins";
 
+/* kills extra white space */
 html,body
 {
     width: 100%;
@@ -30,55 +29,15 @@ html,body
   margin-top: -19px;
 }
 
-/*CREATE MODAL */
-#createmodal {
-    top: 13vh;
-    right: -38vh;
-    outline: none;
-}
-
-.createmodal-dialog {
-  background-color: white;
-  width: 75%;
-  height: 40%;
-
-  @include for-tablet-landscape-up {
-    background-color: white;
-    width: 39%;
-    height: 40%;
-  }
-
-  @include for-tablet-landscape-up  {
-    width: 600px;
-    margin: 30px auto;
-  }
-}
-
-.createmodal-footer {
-  padding: 15px;
-}
-
-.createmodal-content {
-  width:33vw;
-}
-
-.createmodal-title {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 11.5px;
-  opacity: 0.7;
-  padding:23px;
-}
-
 /* CREATE MODAL TRIGGER */
-.createModalButton:hover {
+.createModalTrigger:hover {
   color: white;
   text-decoration: none;
   font-size:13px;
   border: 1px solid;
 }
 
-.createModalButton {
+.createModalTrigger {
   text-align: center;
   margin-top: 5%;
   font-family: 'Open Sans', sans-serif;
@@ -86,13 +45,13 @@ html,body
   text-decoration: none;
   font-size: 13px;
   border: 1px solid;
-  width: 235px;
+  width: 238px;
   font-weight: lighter;
   background: none;
   outline:none !important;
 }
 
-.createModalButton p {
+.createModalTrigger p {
   margin: 2vh;
 }
 

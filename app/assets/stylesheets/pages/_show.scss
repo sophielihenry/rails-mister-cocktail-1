@@ -11,7 +11,6 @@ background-color: white;
     bottom: 107vh;
     font-family: 'Open Sans', sans-serif;
 
-
   @include for-tablet-landscape-up {
     background-color: white;
     width: 22vh;
@@ -42,10 +41,9 @@ background-color: white;
 }
 
 .layout {
-
   position: relative;
 
-   @include for-tablet-landscape-up {
+  @include for-tablet-landscape-up {
     display:flex;
     background-color:white;
     position:relative;
@@ -92,7 +90,6 @@ background-color: white;
 }
 
 /* INGREDIENTS */
-
 .heading {
   font-size: 13px;
   margin-left: 2vh;
@@ -202,7 +199,7 @@ background-color: white;
   }
 }
 
-/* ADD INGREDIENT MODAL */
+/* ADD INGREDIENT / REVIEW MODAL */
 .modalbtn {
   border-radius: 50%;
   background-color: #F9C0C3;
@@ -257,10 +254,7 @@ background-color: white;
       padding-bottom: 21px;
 }
 
-/* ADD REVIEW MODAL */
-
-
-.createIngredientsButton {
+.createModalButton {
   background-color: #F9C0C3!important;
   color: white!important;
   border: 1px solid!important;
@@ -270,16 +264,3 @@ background-color: white;
   right: 7px;
   bottom: 6px;
 }
-
-
-// .row {
-//   margin:0;
-// }
-
-// .form-group {
-//   font-size:13px;
-// }
-
-// .form-control {
-//   width:100%;
-// }
