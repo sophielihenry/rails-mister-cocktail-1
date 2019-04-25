@@ -12,6 +12,7 @@ html,body
     overflow-x: hidden;
 }
 
+/* safari flexbox */
 .row {
     &:before {
         content: none;
@@ -64,6 +65,17 @@ html,body
 .createModalTrigger p {
   margin: 2vh;
 }
+
+/* to fix the opacity bug */
+.modal {
+  opacity: 1 !important;
+  background-color: rgba(0,0,0,0.1) !important;
+}
+
+.fade.in {
+  opacity: 1 !important;
+}
+
 
 /* VIDEO */
 .video {
