@@ -203,41 +203,6 @@ background-color: white;
 }
 
 /* ADD INGREDIENT MODAL */
-
-// .modal {
-//   text-align: center;
-//   padding: 0!important;
-// }
-
-// .modal:before {
-//   content: '';
-//   display: inline-block;
-//   height: 100%;
-//   vertical-align: middle;
-//   margin-right: -4px;
-// }
-
-// .modal-dialog {
-//   display: inline-block;
-//   text-align: left;
-//   vertical-align: middle;
-// }
-
-
-
-// #myModal {
-//   outline: none;
-//       position: absolute;
-//     left: 50%;
-//     top: 50%;
-//     transform: translate(-50%, -50%);
-// }
-
-// .modal-footer {
-//   border-top: 1px solid white!important;
-//   margin-top: -64px;
-// }
-
 .modalbtn {
   border-radius: 50%;
   background-color: #F9C0C3;
@@ -265,9 +230,9 @@ background-color: white;
   }
 }
 
-// .formLayout {
-//   width:100%;
-// }
+.select2-container {
+  width: 100% !important;
+}
 
 .modal-title {
   font-size: 13px;
@@ -288,13 +253,9 @@ background-color: white;
   font-size: 13px;
 }
 
-// .modal-content {
-//   width:350px;
-// }
-
-// .select2-container {
-//   width:100% !important;
-// }
+.formLayout {
+      padding-bottom: 21px;
+}
 
 /* ADD REVIEW MODAL */
 #myModal1 {
@@ -309,6 +270,9 @@ background-color: white;
   border: 1px solid!important;
   border-radius: 17px!important;
   font-size: 12px!important;
+  position: absolute;
+  right: 7px;
+  bottom: 6px;
 }
 
 .modalreview {
