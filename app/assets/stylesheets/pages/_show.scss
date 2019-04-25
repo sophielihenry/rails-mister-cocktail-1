@@ -92,6 +92,7 @@ background-color: white;
 }
 
 /* INGREDIENTS */
+
 .heading {
   font-size: 13px;
   margin-left: 2vh;
@@ -224,6 +225,7 @@ background-color: white;
   font-size: 13px;
   font-weight: lighter;
   margin-top: -13px;
+  outline:none;
 
   @include for-tablet-landscape-up {
     border-radius: 50%;
@@ -237,20 +239,26 @@ background-color: white;
     margin-top: -13px;
     height: 3vh;
     margin-right: 0.5vh;
+    outline:none;
   }
+}
+
+.formLayout {
+  width:100%;
+}
+
+.modalTitle {
+  font-size: 13px;
+  // margin-left: 2vh;
+  // margin-top: 0vh;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .modalbtn:hover {
   text-decoration:none;
-}
-
-.dose {
-  width:61vw;
-}
-
-.doses {
-  margin-left: -2vh;
-  width: 36vw;
 }
 
 .btn {
@@ -261,7 +269,11 @@ background-color: white;
 }
 
 .modal-content {
-  width:33vw;
+  width:350px;
+}
+
+.select2-container {
+  width:100%;
 }
 
 /* ADD REVIEW MODAL */
@@ -271,15 +283,12 @@ background-color: white;
   outline: none;
 }
 
-.addmodal {
+.createIngredientsButton {
   background-color: #F9C0C3!important;
   color: white!important;
   border: 1px solid!important;
   border-radius: 17px!important;
   font-size: 12px!important;
-  padding:9px;
-  position: relative;
-  right: -44vh;
 }
 
 .modalreview {
@@ -291,5 +300,9 @@ background-color: white;
 }
 
 .form-group {
-  font-size:2vh;
+  font-size:13px;
+}
+
+.form-control {
+  width:100%;
 }

@@ -1,6 +1,9 @@
-<div class="modaltitle">Add a new ingredient</div>
-<%= simple_form_for [cocktail, dose] do |f| %>
-  <%= f.input :description, label: "Quantity" %>
-  <%= f.association :ingredient, input_html: { class: "beautiful-dropdown" }, include_hidden: false %>
-  <%= f.button :submit, class: "addmodal" %>
-<% end %>
+<div class="modalTitle">Add a new ingredient</div>
+
+<div class="formLayout">
+  <%= simple_form_for [cocktail, dose] do |f| %>
+    <%= f.input :description, label: "Quantity" %>
+    <%= f.association :ingredient, input_html: { class: "beautiful-dropdown" }, include_hidden: false %>
+    <%= f.button :submit, class: "createIngredientsButton" %>
+  <% end %>
+</div>
