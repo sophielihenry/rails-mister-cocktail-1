@@ -13,7 +13,7 @@
 
 <body>
   <!------ ADD AN INGREDIENT MODAL ---------------->
-  <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -29,8 +29,7 @@
     </div>
   </div>
   <!------ ADD AN REVIEW MODAL ---------------->
-
-  <div class="modal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade in" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -45,13 +44,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
 <!------------layout-------------------->
   <div class="layout">
     <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill, class: "show-image" %>
@@ -126,7 +118,6 @@
     </div>
 <!-----end of layout div------>
   </div>
-
 <!-----JS------>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
