@@ -204,16 +204,12 @@ background-color: white;
 
 /* ADD INGREDIENT MODAL */
 #myModal {
-  top: 13vh;
-  right: -38vh;
   outline: none;
 }
 
 .modal-footer {
-  padding: 15px;
-  text-align: right;
   border-top: 1px solid white!important;
-  margin-top: 21vh;
+  margin-top: -64px;
 }
 
 .modalbtn {
@@ -243,9 +239,9 @@ background-color: white;
   }
 }
 
-.formLayout {
-  width:100%;
-}
+// .formLayout {
+//   width:100%;
+// }
 
 .modalTitle {
   font-size: 13px;
@@ -273,7 +269,7 @@ background-color: white;
 }
 
 .select2-container {
-  width:100%;
+  width:100% !important;
 }
 
 /* ADD REVIEW MODAL */
