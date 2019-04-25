@@ -212,7 +212,7 @@ background-color: white;
   font-size: 13px;
   font-weight: lighter;
   margin-top: -13px;
-  outline:none;
+  outline:none !important;
 
   @include for-tablet-landscape-up {
     border-radius: 50%;
@@ -226,7 +226,7 @@ background-color: white;
     margin-top: -13px;
     height: 3vh;
     margin-right: 0.5vh;
-    outline:none;
+    outline:none !important;
   }
 }
 

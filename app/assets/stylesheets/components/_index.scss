@@ -89,7 +89,7 @@ html,body
   width: 235px;
   font-weight: lighter;
   background: none;
-  outline:none;
+  outline:none !important;
 }
 
 .createModalButton p {
@@ -211,10 +211,6 @@ html,body
 
 .btn:hover {
   background-color:#F9C0C3;
-}
-
-.newcocktailform {
-  margin-left:3vh;
 }
 
 .form-group {
