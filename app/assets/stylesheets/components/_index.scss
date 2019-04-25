@@ -80,7 +80,7 @@ html,body
 
 .createModalButton {
   text-align: center;
-  margin-top: 15%;
+  margin-top: 5%;
   font-family: 'Open Sans', sans-serif;
   color: white;
   text-decoration: none;
@@ -157,9 +157,10 @@ html,body
     justify-content: center;
     align-items: center;
     margin-left: 47%;
+    padding-top:10%;
 
   @include for-phone-only {
-    background: linear-gradient(beige, pink, white);
+    background: linear-gradient(beige, #FFA6A6, white);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,6 +184,7 @@ html,body
   font-family: 'Open Sans', sans-serif;
   color: white;
   padding: 31px;
+  padding-top:19%;
 }
 
 .description {
