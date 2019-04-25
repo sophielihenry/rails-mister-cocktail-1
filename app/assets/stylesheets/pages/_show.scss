@@ -203,14 +203,40 @@ background-color: white;
 }
 
 /* ADD INGREDIENT MODAL */
-#myModal {
-  outline: none;
-}
 
-.modal-footer {
-  border-top: 1px solid white!important;
-  margin-top: -64px;
-}
+// .modal {
+//   text-align: center;
+//   padding: 0!important;
+// }
+
+// .modal:before {
+//   content: '';
+//   display: inline-block;
+//   height: 100%;
+//   vertical-align: middle;
+//   margin-right: -4px;
+// }
+
+// .modal-dialog {
+//   display: inline-block;
+//   text-align: left;
+//   vertical-align: middle;
+// }
+
+
+
+// #myModal {
+//   outline: none;
+//       position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+// }
+
+// .modal-footer {
+//   border-top: 1px solid white!important;
+//   margin-top: -64px;
+// }
 
 .modalbtn {
   border-radius: 50%;
@@ -264,13 +290,13 @@ background-color: white;
   font-size: 13px;
 }
 
-.modal-content {
-  width:350px;
-}
+// .modal-content {
+//   width:350px;
+// }
 
-.select2-container {
-  width:100% !important;
-}
+// .select2-container {
+//   width:100% !important;
+// }
 
 /* ADD REVIEW MODAL */
 #myModal1 {
@@ -291,14 +317,14 @@ background-color: white;
   margin-top: -3vh;
 }
 
-.row {
-  margin:0;
-}
+// .row {
+//   margin:0;
+// }
 
-.form-group {
-  font-size:13px;
-}
+// .form-group {
+//   font-size:13px;
+// }
 
-.form-control {
-  width:100%;
-}
+// .form-control {
+//   width:100%;
+// }
